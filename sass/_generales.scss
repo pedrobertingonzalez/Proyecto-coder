@@ -1,0 +1,89 @@
+/*variables*/
+@use "./variables" as*;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*Header*/
+
+header{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+
+        img{
+            width: 60px;
+            margin: 5px;
+    }
+
+        .fondo-nav{
+            background-color: $base;
+
+            a{
+                font-size: 30px;
+                margin-right: 20px;
+                &:hover{
+                    color: rgb(151, 151, 231);
+                }
+            }
+        }
+}
+
+/*Footer*/
+
+footer{
+    @include tamano(100%, 60px);
+    background-color: $base;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    padding-right: 15px;
+    position: fixed;
+    z-index: 1000;
+    bottom: 0;
+
+        a img{
+        width: 35px;
+        }
+
+        p{
+        line-height: 1;
+        margin: 0;
+        color: black;
+        }
+}
+
+/*body*/
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 80px;
+    padding-bottom: 60px;
+
+    main{
+        flex: 1;
+
+        h1{
+        font-size: 70px;
+        font-family: sans-serif;
+        font-style: oblique;
+        text-align: center;
+        padding: 20px 0 20px 0;
+        }
+
+        h2{
+        text-align: center;
+        font-size: 40px;
+        padding: 20px 0 20px 0;
+        }
+    }
+}

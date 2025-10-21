@@ -1,0 +1,6 @@
+$base: rgb(85, 93, 54);
+
+@mixin tamano ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}

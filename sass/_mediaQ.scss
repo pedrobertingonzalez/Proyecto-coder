@@ -1,0 +1,41 @@
+@media (max-width: 992px)
+{
+.foto2{
+    display:none !important;
+ }
+    .contenedor-grid {
+    grid-template-areas: 
+    "titulo titulo" 
+    "foto1 texto1"
+    "foto1 texto2"
+    "foto3 texto3";
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    }
+}
+
+@media (max-width: 729px) /*si lo pongo en 576, entre 576 y 729 se me superponen los p */
+{
+    /* INDEX */
+    .video-index{
+        object-position: 90% 50%;
+    }
+    /* CLASES */
+    .foto2{
+        display: block !important;
+        aspect-ratio: auto;
+    }
+    .foto1{
+        aspect-ratio: 15 / 8;
+    }
+    .contenedor-grid {
+    grid-template-areas: 
+    "titulo" 
+    "foto1"
+    "texto1"
+    "foto2"
+    "texto2"
+    "foto3"
+    "texto3";
+    grid-template-columns: 1fr;}
+}
